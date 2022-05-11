@@ -1,0 +1,62 @@
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content3 {
+  background-color: #fefefe;
+  margin-left: 40% ; /* 15% from the top and centered */
+  padding: 20px;
+    margin-top: 15%;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+    height: 55%;
+}
+.modal3 .modal-content3 h1
+{
+    font-size: 1.1vw;
+    margin-left: 1%;
+    margin-top: 5%;
+   
+}
+.modal3 .modal-content3 input[type='text']
+{
+    width: 90%;
+}
+.modal3 .modal-content3 .time
+{
+    width: 25%;
+    margin-left: 1%;
+}
+.modal3 .modal-content3 #add
+{
+    float: right;
+    width: 30%;
+    margin-top: 6%;
+    background-color: #D68910;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+#close3 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+    cursor: pointer;
+}
+#delete
+{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}

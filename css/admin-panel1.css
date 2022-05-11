@@ -1,0 +1,1323 @@
+body
+{
+    background-color: #D7DBDD  ;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */ 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 10%; /* Could be more or less, depending on screen size */
+    height: 50%;
+}
+.modal-content h1
+{
+    text-align: center;
+    color: #3498DB;
+}
+.modal-content input[type='text']
+{
+    height: 15%;
+    margin-top: 3%;
+}
+.modal-content #sub
+{
+    height: 15%;
+    margin-top: 3%;
+    width: 40%;
+    margin-left: 30%;
+    border: none;
+    color: white;
+    background-color: #3498DB;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#myBtn
+{
+    color: white;
+    font-size: 1.5vw;
+    float: right;
+    cursor: pointer;
+    
+    margin-right: 20%;
+}
+#myBtn:hover
+{
+    color: #D68910;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.left
+{
+    height: 120%;
+    width: 18%;
+   
+    transition: ease 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+   background-image: linear-gradient(rgb(0,0,0,0.9),rgb(0,0,0,0.9)),url(img/main1.jpg);
+    background-size: cover;
+    position: fixed;
+}
+.left h1
+{
+    font-size: 1.8rem;
+    float: right;
+    margin: 5%;
+    color: white;
+    cursor: pointer;
+}
+.left #bar2
+{
+    font-size: 1.8rem;
+    color: white;
+   margin-left: 35%;
+    cursor: pointer;
+    display: none;
+   
+}
+.menubar
+{
+    display: none;
+}
+.profile
+{
+    margin-top: 15%;
+    margin-left: 0%;
+   
+}
+.left #name
+{
+  text-align: center;
+    color: #B2BABB;
+    font-size: 1.2vw;
+    margin-top: 5%;
+    font-family: 'Caudex', serif;
+   
+}
+.profile #name1
+{
+   text-align: center;
+    color: #B2BABB;
+    font-size: 1.2vw;
+    margin-top: 0%;
+    font-family: 'Caudex', serif;
+}
+.left .bor
+{
+    width: 100%;
+    height: 0.2%;
+    margin-top: 15%;
+    background-color:#B2BABB;
+}
+.profile #prof
+{
+    color:  #D68910;
+    font-size: 7vw;
+    margin-left: 32%;
+   
+}
+.menuname
+{
+    margin-top: 20%;
+}
+.menuname .dashboard,.menuname .studentlist,.menuname .registration,.menuname .examsetting,.menuname .result,.menuname .feedback
+{
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    width: 96%;
+    height: 6%;
+    margin-left: 2%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    cursor: pointer;
+    transition: ease 0.2s;
+    
+}
+.menuname .logout
+{
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    width: 96%;
+    height: 6%;
+   
+    border-radius: 10px;
+    
+    bottom: 0;
+    left: 2%;
+    cursor: pointer;
+    margin-top: 0%;
+    background-color:#E74C3C ;
+}
+.menuname .logout:hover
+{
+    background-color: #B03A2E;
+}
+.menuname .logout h1
+{
+      margin-top: 4%;
+     font-size: 1.1vw;
+    margin-right: 35%;
+}
+.menuname .dashboard:hover,.menuname .studentlist:hover,.menuname .registration:hover,.menuname .examsetting:hover,.menuname .result:hover,.menuname .feedback:hover
+{
+    background-color: #D68910;
+    
+}
+.menuname .dashboard h1,.menuname .studentlist h1,.menuname .registration h1,.menuname .examsetting h1,.menuname .result h1,.menuname .feedback h1
+{
+  font-size: 1vw;
+    text-align: center;
+    float: left;
+font-family: 'Recursive', sans-serif;
+    color: #B2BABB;
+    font-weight: bold;
+}
+.menuname .dashboard:hover h1,.menuname .studentlist:hover h1,.menuname .registration:hover h1,.menuname .examsetting:hover h1,.menuname .result:hover h1,.menuname .feedback:hover h1
+{
+    color: white;
+}
+.menuname .dashboard #d5,.menuname .studentList #d7,.menuname .registration #d6,.menuname .examsetting #d8,.menuname .result #d9,.menuname .logout #d11,.menuname .feedback #d13
+{
+    display: none;
+    font-size: 1.3vw;
+    cursor: pointer;
+   padding-top: 10px;
+    color: #B2BABB;
+   
+}
+.menuname .result h1
+{
+     margin-right: 56%;
+}
+
+.right
+{
+    
+    width: 82%;
+    height: 100vh;
+  transition: ease 0.5s;
+    position: absolute;right: 0;top: 0;
+   font-family: 'Recursive', sans-serif;
+   font-weight: bold;
+}
+
+.right .top
+{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+    height: 6vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.9),rgb(0,0,0,0.9)),url(img/main1.jpg);
+    background-size: cover;
+    position: fixed;
+    z-index: 1;
+   
+}
+.right .top h1
+{
+    float: left;
+    color: white;
+    
+    margin-left: 5%;
+    margin-top: 0.5%;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.right .top p1
+{
+    color: #D68910;
+}
+.right .top .social
+{
+    float: right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+ .right .top .social  ul
+{
+    margin-right: 20%;
+}
+ .right .top .social li
+{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 2%;
+    margin-top: 0.8%;
+    float: right;
+   
+    color: #D68910;
+    cursor: pointer;
+}
+/* Dashboard start */
+.right .dashboard
+{
+    height: 100%;
+    width: 100%;
+   display:block;
+    
+}
+.right .dashboard h1
+{
+    font-size: 1.7rem;
+    float: left;
+    margin-left: 4%;
+    margin-top: 8%;
+    width: 81.9%;
+    color: #626567 ;
+    font-weight: bolder;
+}
+.right .dashboard .dash
+{
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+.dashboard .dash .div1,.dashboard .dash .div2,.dash .div3
+{
+    
+    height: 100%;
+    width: 25%;
+    margin-left: 7%;
+    margin-top: 5%;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+}
+.dashboard .dash .div1
+{
+    border: 1px solid #D68910 ;
+}
+.dashboard .dash .div2
+{
+    border: 1px solid #2874A6; 
+}
+.dashboard .dash .div3
+{
+    border: 1px solid  #239B56 ;
+}
+ .div1 .div1-part1
+{
+    background-color: #D68910 ; 
+    height: 80%;
+    width: 100%;
+}
+
+.div2 .div2-part1
+{
+    background-color: #2874A6; 
+    height: 80%;
+    width: 100%;
+}
+.div3 .div3-part1
+{
+    background-color: #239B56  ; 
+    height: 80%;
+    width: 100%;
+}
+.div1 .div1-part1 h3,.div2 .div2-part1 h3,.div3 .div3-part1 h3
+{
+    float: left;
+    color: white;
+    font-size: 4vw;
+    margin: 10%;
+}
+.div1 .div1-part1 p,.div2 .div2-part1 p,.div3 .div3-part1 p
+{
+    text-align: center;
+    font-size: 1.3vw;
+      font-family: 'Recursive', sans-serif;
+    color: white;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+.div1 .div1-part2,.div2 .div2-part2,.div3 .div3-part2
+{
+    height: 20%;
+    width: 100%;
+    cursor: pointer;
+   
+}
+
+ .div1 .div1-part2 h1
+{
+    color: #D68910 ;
+    font-size: 1vw;
+    margin-top: -1%;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+}
+.div2 .div2-part2 h1
+{
+    color: #2874A6 ;
+    font-size: 1vw;
+    margin-top: -1%;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+}
+.div3 .div3-part2 h1
+{
+    color: #239B56 ;
+    font-size: 1vw;
+    margin-top: -1%;
+    font-weight: bold;
+    font-family: 'Recursive', sans-serif;
+}
+.dashboard .chart
+{
+   
+    height: 40%;
+    width: 95%;
+    margin-top: 10%;
+    display: flex;
+    margin-left: 3%;
+}
+/*Registration*/
+.right .registration 
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display:none;
+}
+.right .registration h1
+{
+     font-size: 1.7rem;
+    float: left;
+    margin-left: 4%;
+    margin-top: 8%;
+    width: 81.9%;
+    color: #626567 ;
+    
+    font-weight: bolder;
+}
+.right .registration .form .line
+{
+    height: 86%;
+   
+    width: 2%;
+    background-color:#D68910;
+    float: left;
+}
+.right .registration .form
+{
+    height: auto;
+    width: 45%;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 2.7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    float: left;
+}
+.right .registration .form h1
+{
+    color: black;
+    font-size: 1.3vw;
+    margin-top: 6%;
+}
+.right .registration .form2
+{
+    margin-top: 15%;
+}
+.right .registration .form #user
+{
+    width: 95%;
+}
+
+.right .registration .form input[type='text'],.right .registration .form input[type='number']
+{
+    width: 30%;
+    margin-left: 1.5%;
+    height: 6%;
+    margin-top: 1%;
+    text-align: center;
+    margin-right: 0.5%;
+    font-size: 1.1vw;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.right .registration .form input[type='password']
+{
+    width: 95%;
+    margin-left: 1.5%;
+    height: 6%;
+    margin-top: 2%;
+    text-align: center;
+    margin-right: 0.5%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.right .registration .form #submit
+{
+    height:9%;
+    width: 43%;
+    margin-top: 15%;
+    margin-left: 30%;
+    border: none;
+    background-color: #D68910;
+    color: white;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    
+}
+.right .registration .form #email
+{
+    width: 96%;
+}
+.right .registration .form input[type='number']
+{
+    width: 46%;
+}
+
+.right .registration .form2
+{
+    font-size: 1vw;
+    
+}
+.right .registration .form h2
+{
+    font-size: 1.2vw;
+    margin-top: 6%;
+    margin-left: 6%;
+    font-weight: 600;
+    float: left;
+   
+}
+.right .registration .form h3
+{
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.right .registration .form #year
+{
+ margin-left: 10%;
+    cursor: pointer;
+    float: left;
+     font-size: 1.2vw;
+    margin-bottom: 0%;
+}
+.right .registration .form #branch
+{
+ 
+    cursor: pointer;
+ 
+     font-size: 1.2vw;
+   
+}
+/*student list*/
+.right .std-list 
+{
+    height: 100%;
+     display:none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.right .std-list h1
+{
+     font-size: 1.7rem;
+    float: left;
+    margin-left: 4%;
+    margin-top: 8%;
+    width: 81.9%;
+    color: #626567 ;
+   
+    font-weight: bolder;
+}
+.right .std-list #total
+{
+    margin-top: 0%;
+    float: right;
+    font-size: 0.9vw;
+    font-weight: bold;
+    margin-bottom: 7%;
+    margin-right: 10%;
+}
+.right .std-list .part1
+{
+    height: 7%;
+    width: 97%;
+   
+    margin-top: 13%;
+    margin-left: 1.5%;
+     
+    display: flex;
+}
+.right .std-list .part2
+{
+    height: 6%;
+    width: 97%;
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 1.5%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+}
+.right .std-list .part2 p2
+{
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    background-color: #E74C3C ;
+    cursor: pointer;
+}
+.right .std-list .part2 p2 a
+{
+    text-decoration: none;
+    color: white;
+}
+.right .std-list .part2 p1
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #2980B9 ;
+}
+.right .std-list .part2 h1 p2 #list
+{
+    background-color: none;
+}
+.right .std-list .part1 .roll,.right .std-list .part2 .roll
+{
+    height: 100%;
+    width: 14%;
+    
+    text-align: center;
+}
+.right .std-list .part1 .roll h1,.right .std-list .part1 .action h1,.right .std-list .part1 .details h1,.right .std-list .part2 .roll h1,.right .std-list .part2 .action h1,.right .std-list .part2 .details h1
+{
+    margin-top: -5%;
+    font-size: 1.1vw;
+    color: black;
+}
+.right .std-list .part1 .name h1,.right .std-list .part2 .name h1
+{
+     margin-top: -1.5%;
+    font-size: 1.1vw;
+    color: black;
+}
+
+.right .std-list .part1 .name,.right .std-list .part2 .name
+{
+    height: 100%;
+    text-align: center;
+    width: 47%;
+  
+}
+.right .std-list .part1 .action ,.right .std-list .part2 .action
+{
+    height: 100%;
+    text-align: center;
+    width: 21%;
+   
+}
+.right .std-list .part1 .details,.right .std-list .part2 .details
+{
+     height: 100%;
+    text-align: center;
+    width: 18%;
+   
+}
+.right .std-list .part2 .details a
+{
+    color:#2980B9;
+    cursor: pointer;
+    
+    
+}
+.right .std-list .part2 .details a:hover
+{
+  
+    cursor: pointer;
+    margin-left: 10%;
+}
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content1 {
+  background-color: #fefefe;
+  margin-left: 30% ; /* 15% from the top and centered */
+  padding: 20px;
+    margin-top: 5%;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+    height: 80%;
+}
+.modal1 .modal-content1 h1
+{
+    font-size: 1.3vw;
+    margin-left: 5%;
+   
+}
+.modal1 .modal-content1 h2
+{
+    font-size: 1.3vw;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-weight: bold;
+   
+}
+.modal1 .modal-content1 input[type='text']
+{
+    width: 90%;
+    margin-left: 5%;
+}
+
+#close1 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+    cursor: pointer;
+}
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin-left: 30% ; /* 15% from the top and centered */
+  padding: 20px;
+    margin-top: 5%;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+    height: 83%;
+}
+.modal2 .modal-content2 h1
+{
+    font-size: 1.3vw;
+    margin-left: 5%;
+   
+}
+.modal2 .modal-content2 h2
+{
+    font-size: 1.3vw;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-weight: bold;
+   
+}
+.modal2 .modal-content2 input[type='text']
+{
+    width: 90%;
+    margin-left: 5%;
+}
+.modal2 .modal-content2 #n
+{
+     width: 26.5%;
+    margin-left: 5%;
+}
+#close2 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+    cursor: pointer;
+}
+.modal2 .modal-content2 #submit
+{
+    float: right;
+    margin: 5%;
+    width: 20%;
+    height: 7%;
+    color: white;
+    background-color: #D68910;
+    border: none;
+}
+.modal2 .modal-content2 #submit:hover{
+    background-color: #28B463;
+}
+.right .std-list .delete
+{
+    margin-top: 3%;
+}
+.right .std-list #deleteall
+{
+   padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 35px;
+     padding-right: 35px;
+    margin-left: 43%;
+    margin-top: 10%;
+    color: white;
+    border: none;
+    background-color: #E74C3C ;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+/*exam setting*/
+.right .exam-setting
+{
+    height: 100%;
+     display:none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.right .exam-setting h1
+{
+     font-size: 1.7rem;
+    float: left;
+    margin-left: 4%;
+    margin-top: 8%;
+   
+    width: 81.9%;
+    color: #626567 ;
+    font-weight: bolder;
+}
+.right .exam-setting .add
+{
+    padding: 5px;
+    background-color: #2E86C1 ;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.right .exam-setting #addsubject
+{
+    margin-top: 0%;
+    width: 20%;
+    margin-right: 5%;
+    float: right;
+    height: 5%;
+    font-size: 1.1vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+}
+.right .exam-setting #btn
+{
+     margin-top: 0%;
+    width: 20%;
+    margin-right: 5%;
+    float: right;
+    height: 5%;
+    font-size: 1.1vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+}
+.right .exam-setting #tb
+{
+    margin-top: 17%;
+    margin-left: 2%;
+    width: 96%;
+    height: auto;
+    text-align: center;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+    font-weight: bold;
+}
+.right .exam-setting th
+{
+    height: 60px;
+    text-align: center;
+    color: white;
+    background-color: #D68910 ;
+}
+.right .exam-setting #tb #tr
+{
+    height: 100px;
+}
+.right .exam-setting #td1
+{
+    width: 5%;
+     background-color: white;
+    
+}
+.right .exam-setting #td2
+{
+    width: 40%;
+    background-color: #E5E7E9 ;
+}
+.right .exam-setting #td3
+{
+    
+    width: 10%;
+     background-color: white;
+}
+
+.right .exam-setting #td4
+{
+    
+    background-color: #E5E7E9 ;
+}
+.right .exam-setting #td5 a
+{
+    text-decoration: none;
+    color:red;
+    
+}
+.right .exam-setting #td5
+{
+    background-color: white;
+    
+}
+.right .exam-setting #td5 .edit
+{
+    color: #3498DB;
+    cursor: pointer;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+.right .exam-setting #td6
+{
+    
+    background-color: #E5E7E9 ;
+    cursor: pointer;
+}
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content3 {
+  background-color: #fefefe;
+  margin-left: 40% ; /* 15% from the top and centered */
+  padding: 20px;
+    margin-top: 15%;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+    height: 60%;
+}
+.modal3 .modal-content3 h1
+{
+    font-size: 1.1vw;
+    margin-left: 1%;
+    margin-top: 5%;
+   
+}
+.modal3 .modal-content3 input[type='text']
+{
+    width: 90%;
+}
+.modal3 .modal-content3 .time
+{
+    width: 25%;
+    margin-left: 1%;
+}
+.modal3 .modal-content3 #add
+{
+    float: right;
+    width: 30%;
+    margin-top: 6%;
+    background-color: #D68910;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+#close3 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+    cursor: pointer;
+}
+.right .exam-setting .part2
+{
+    margin-top: 6%;
+    height: auto;
+    width: 98%;
+  margin-left: 1%;
+    
+    
+}
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content4 {
+  background-color: #fefefe;
+  margin-left: 10% ; /* 15% from the top and centered */
+  padding: 20px;
+    margin-top: 5%;
+  border: 1px solid #888;
+  width: 85%; /* Could be more or less, depending on screen size */
+    height: 85%;
+}
+.modal-content4 #que
+{
+    resize: none;
+    width: 95%;
+    height: 16%;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+.modal-content4 input[type="text"]
+{
+    width: 95%;
+    height: 11%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+.modal-content4 #sb
+{
+     width: 95%;
+    height: 5%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+.modal-content4 #answer
+{
+    width: 95%;
+    height: 5%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+.modal-content4 .insert
+{
+    float: right;
+    height: 7%;
+    margin-top: 1%;
+    margin-right: 5%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #17A589 ;
+    width: 15%;
+}
+#close4 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+    cursor: pointer;
+}
+/*result*/
+.right .result
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+     display: none;
+}
+.right .result h1
+{
+     font-size: 1.7rem;
+    float: left;
+    margin-left: 4%;
+    margin-top: 8%;
+   
+    width: 81.9%;
+    color: #626567 ;
+    font-weight: bolder;
+}
+.right .result #re
+{
+    margin-top: 3%;
+    float: left;
+    margin-right: 49%;
+    margin-left: 1%;
+    width: 30%;
+    height: 5%;
+}
+.right .result #txtHint
+{
+    margin-right: 40%;
+}
+/*feedback*/
+.right .feedback
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+     display:none;
+    top: 0;
+}
+.right .feedback h1
+{
+     font-size: 1.7rem;
+    float: left;
+    
+    margin-top: 8%;
+    margin-left: 2%;
+    width: 81.9%;
+    color: #626567 ;
+    font-weight: bolder;
+}
+.right .feedback table
+{
+    margin-top: 14%;
+    margin-left: 0.5%;
+    width: 99%;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
+.right .feedback table #tr
+{
+    background-color: #D68910 ;
+    color: white;
+    font-weight: bold;
+    height: 55px;
+}
+.right .feedback table #td1
+{
+    height: 75px;
+    width: 5%;
+}
+.right .feedback table #td2
+{
+   background-color: #E5E7E9 ;
+    width: 25%;
+    height: 75px;
+}
+.right .feedback table #td3
+{
+    height: 75px;
+    width: 20%;
+}
+.right .feedback table #td4
+{
+    background-color: #E5E7E9 ;
+    width: 10%;
+    height: 75px;
+}
+.right .feedback table #td5
+{
+   height: 75px;
+    width: 20%;
+}
+.right .feedback table #td5 textarea
+{
+    width: 100%;
+    border: none;
+    height: 100%;
+    resize: none;
+    text-align: center;
+}
+.right .feedback a
+{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    margin-left: 40%;
+    padding-bottom: 10px;
+    background-color: #E74C3C;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media only screen and (max-width: 900px) {
+    
+    .left
+    {
+        display: none;
+    }
+    .menubar
+    {
+        position: relative;
+        display: block;
+        z-index: 2;
+    }
+    .menubar #bar3
+    {
+        
+        cursor: pointer;
+        position: absolute;
+        left: 3%;
+        top: 3%;
+    }
+    
+    .menubar #crossbar
+    {
+        float: right;
+        font-size: 2.1rem;
+        margin: 5%;
+        cursor: pointer;
+        color: white;
+    }
+    .menubar .menu
+    {
+        width: 40%;
+        height: 120%;
+        background-image: linear-gradient(rgb(0,0,0,0.9),rgb(0,0,0,0.9)),url(img/main1.jpg);
+    background-size: cover;
+        display: none;
+        margin-top: -2%;
+        transition: ease 0.9s;
+        
+    }
+    .right .top
+    {
+       display: none;
+        
+    }
+    .right 
+    {
+        width: 100%;
+        z-index: 1;
+    }
+    .profile-mob #prof
+    {
+        color:  #D68910;
+        font-size: 12.2vw;
+        margin-top: 20%;
+        margin-left:35%;
+    }
+    .profile-mob h2
+    {
+        color: white;
+         color: #B2BABB;
+font-family: 'Caudex', serif;
+        text-align: center;
+        margin-top: 2%;
+        font-size: 3vw;
+        
+    }
+    .menu .bor
+    {
+        width: 100%;
+        height: 0.2%;
+        background-color: white;
+        margin-top: 10%;
+        
+    }
+    .menuname-mob
+{
+    margin-top: 20%;
+}
+.menuname-mob .dashboard,.menuname-mob .studentlist,.menuname-mob .registration,.menuname-mob .examsetting,.menuname-mob .result,.menuname-mob .feedback
+{
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    width: 96%;
+    height: 6%;
+    margin-left: 2%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: ease 0.2s;
+    
+}
+    .menuname-mob .dashboard:hover,.menuname-mob .studentlist:hover,.menuname-mob .registration:hover,.menuname-mob .examsetting:hover,.menuname-mob .result:hover,.menuname-mob .feedback:hover
+{
+    background-color: #D68910;
+    
+}
+    .menuname-mob .dashboard h1,.menuname-mob .studentlist h1,.menuname-mob .registration h1,.menuname-mob .examsetting h1,.menuname-mob .result h1,.menuname-mob .feedback h1
+{
+  font-size: 0.8rem;
+    margin-top: 3%;
+    margin-left: 5%;
+    text-align: center;
+    float: left;
+font-family: 'Recursive', sans-serif;
+    color: #B2BABB;
+    font-weight: bold;
+}
+    .menuname-mob .dashboard:hover h1,.menuname-mob .studentlist:hover h1,.menuname-mob .registration:hover h1,.menuname-mob .examsetting:hover h1,.menuname-mob .result:hover h1, .menuname-mob .feedback:hover h1
+{
+    color: white;
+}
+    .menuname-mob .logout
+{
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    width: 96%;
+    height: 6%;
+   
+    border-radius: 10px;
+    
+    bottom: 0;
+    left: 2%;
+    cursor: pointer;
+    margin-top: 5%;
+    background-color:#E74C3C ;
+  
+}
+.menuname-mob .logout:hover
+{
+    background-color: #B03A2E;
+}
+.menuname-mob .logout h1
+{
+      margin-top: 1%;
+     font-size: 1.2rem;
+    margin-right: 5%;
+}
+    
+}

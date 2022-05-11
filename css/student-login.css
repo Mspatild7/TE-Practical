@@ -1,0 +1,84 @@
+body
+{
+     background-image: linear-gradient(rgb(0,0,0,0.9),rgb(0,0,0,0.9)),url(img/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.part1
+{
+    
+    width: 50%;
+    
+    margin-top: 5%;
+     text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.part1 h1
+{
+    font-size: 9rem;
+    color: #D68910 ;
+    
+   
+}
+.part1 p
+{
+    color: #909497;
+    font-size: 0.8rem;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.part1 input[type='password'],.part1 input[type='text']
+{
+    height: 9%;
+    width: 55%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: rgb(255,255,255,0.2);
+    color: #D68910;
+}
+.part1 input[type='submit']
+{
+    height: 9%;
+    width: 55%;
+    margin-top: 10%;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #D68910;
+    color: white;
+}
+.part1 input[type='submit']:hover
+{
+    background-color: #2471A3;
+}
+@media only screen and (max-width: 1000px) {
+    .part1 h1
+{
+    font-size: 7rem;
+    color: #D68910 ;
+    
+   
+}
+.part1
+{
+    height: auto;
+    width: 85%;
+    margin-top: 20%;
+    }
+    .part1 input[type='password'],.part1 input[type='text']
+{
+     width: 100%;
+    
+    }
+    .part1 input[type='submit']
+{
+     width: 85%;
+    }
+
+}
